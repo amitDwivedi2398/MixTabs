@@ -1,9 +1,13 @@
 package com.mixtabs;
 
+import com.facebook.react.bridge.JSIModulePackage;
+import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.brentvatne.react.ReactVideoPackage;
+import com.guichaguri.trackplayer.TrackPlayer;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -19,6 +23,11 @@ public class MainApplication extends Application implements ReactApplication {
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
         }
+
+        @Override
+protected JSIModulePackage getJSIModulePackage() { 
+      return new ReanimatedJSIModulePackage(); 
+    }
 
         @Override
         protected List<ReactPackage> getPackages() {

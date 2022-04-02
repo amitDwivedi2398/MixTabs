@@ -19,7 +19,9 @@
     "react-native-gesture-handler": "^2.3.1",
     "react-native-reanimated": "^2.4.1",
     "react-native-safe-area-context": "^4.1.2",
-    "react-native-screens": "^3.13.1"
+    "react-native-screens": "^3.13.1",
+    "react-native-track-player": "^1.1.8",
+    "react-native-video": "^5.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.17.5",
