@@ -11,6 +11,7 @@ function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
+      
     </View>
   );
 }
@@ -27,7 +28,7 @@ const Tab = createBottomTabNavigator();
 function StackNav() {
   return (
     <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
       </Stack.Navigator>
     
@@ -45,7 +46,7 @@ function NotificationsScreen({ navigation }) {
 function Tabsss() {
   return (
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={StackNav} />
+        <Tab.Screen name="Home" component={StackNav} options={{headerShown:false}}/>
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
   );
